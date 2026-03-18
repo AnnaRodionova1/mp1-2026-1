@@ -12,7 +12,6 @@ public:
     Vector(unsigned short n) {
         if ((n > 20) || (n == 0))
         {
-            std::cout << "Неправильный размер" << std::endl;
             size = 1;
             vec = new int[size] {0};
         }
@@ -41,7 +40,6 @@ public:
     }
     void SetSize(int n) {
         if (n < 1 || n > 20) {
-            std::cout << "Размер должен быть от 1 до 20\n";
             return;
         }
         if (n >= size)
@@ -80,7 +78,6 @@ public:
     }
     int dotS(const Vector& other) const {
         if (size != other.size) {
-            std::cout << "Размеры векторов не совпадают\n";
             return 0;
         }
         int dot = 0;
@@ -90,7 +87,6 @@ public:
     }
     Vector operator+(const Vector& other) const {
         if (size != other.size) {
-            std::cout << "Размеры векторов не совпадают\n";
             return Vector();
         }
         Vector sum(size);
