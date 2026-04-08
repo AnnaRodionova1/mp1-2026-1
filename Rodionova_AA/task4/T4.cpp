@@ -2,7 +2,7 @@
 #include <fstream>
 
 enum Month { Jan = 1, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec };
-int days[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
+int days[13] = { 0,31,28,31,30,31,30,31,31,30,31,30,31 };
 class Date {
 private:
 	short day;
